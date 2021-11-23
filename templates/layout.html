@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset='utf-8'>
+    <title>{% block titulo %} {% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<header> <img src="/static/images/notas.png" width="100px" height="100px"></header>
+
+{% endblock %}
+{% block body %}
+<body>
+    {% block encabezado %}
+    <h1 class="encabezado">Aplicacion de notas</h1>
+    {% endblock %}
+    {% block contenido %}
+    {% endblock %}
+    {% block piepagina %}
+    <h1 class="piedpagina">Pie de pagina</h1>
+    {% endblock %}
+</body>
+{% endblock %}
+</html>

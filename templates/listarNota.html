@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block titulo %} Página listado de notas {% endblock %}
+
+{% block contenido %}
+<h2>Listado de Notas</h2>
+<table>
+    {% for nota in consulta %}
+    <tr>
+        <td>{{nota.tituloNota}}</td>
+        <td>{{nota.cuerpoNota}}</td>
+        <td><a href="/eliminarnota/{{nota.idNota}}">Eliminar</a></td>
+        <td><a href="/editarnota/{{nota.idNota}}">Editar</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

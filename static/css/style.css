@@ -1,0 +1,32 @@
+header{
+    text-align: center;
+}
+body{
+    background-color: rgb(241, 113, 8);
+    margin-top: 50px;
+    text-align: center;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    color: rgba(255, 0, 128, 0.623);
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: blue;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: green;
+}
+.encabezado{
+    background-color:pink;
+}
+.piedpagina{
+    background-color:pink;
+}

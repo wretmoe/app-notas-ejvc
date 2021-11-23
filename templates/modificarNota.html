@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block titulo %} Página modificar notas {% endblock %}
+
+{% block contenido %}
+<h1>Modificar Notas</h1>
+<form action="/modificarnota" method="post">
+    <label for="titulo">Titulo de la Nota: </label><br>
+    <input type="text" id="campotitulo" name="campotitulo" value="{{nota.tituloNota}}">
+    <br>
+    <label for="cuerpo">Cuerpo de la Nota: </label><br>
+    <input type="text" id="campocuerpo" name="campocuerpo" value="{{nota.cuerpoNota}}">
+    <br>
+    <input type="hidden" name="idnota" value="{{nota.idNota}}">
+    <input type="submit" value="Modificar Nota">
+</form>
+{% endblock %}

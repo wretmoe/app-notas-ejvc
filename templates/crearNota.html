@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block titulo %} Página crear notas {% endblock %}
+
+{% block contenido %}
+<h2>Crear notas</h2>
+<form action="/crearnota" method="post">
+    <label for="titulo">Titulo de la Nota: </label><br>
+    <input type="text" id="campotitulo" name="campotitulo" value="">
+    <br>
+    <label for="cuerpo">Cuerpo de la Nota: </label><br>
+    <input type="text" id="campocuerpo" name="campocuerpo" value="">
+    <br>
+    <input type="submit" value="Crear Nota">
+</form>
+{% endblock %}
