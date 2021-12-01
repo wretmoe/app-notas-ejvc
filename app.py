@@ -6,7 +6,7 @@ app = Flask(__name__)
 db = SQLAlchemy(app)
 # Habilitando el uso del ORM en la app flask mediante el objeto "db"
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:devilcry45@localhost:5432/notas'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://qxqhpphecvojgb:6331b7dbd9a989989ef5bf8f90b3c46943b6477d1417c2ad599ad952daac84da@ec2-3-220-240-189.compute-1.amazonaws.com:5432/d3k59445d12irs'
 app.config['SQLALCHEMY_TRAK_MODIFICATIONS'] = False
 
 class Notas(db.Model):
